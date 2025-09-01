@@ -8,67 +8,6 @@
       <title>Probus LAnding Page</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <style type="text/css">
-        ul.slick-dots {
-            display: none !important;
-        }
-        .discovermodale.active {
-          display: block !important; /* ya block jo tu chahe */
-        }
-        .w-28 {
-          width: calc(var(--spacing)*28)
-        }
-        body {
-           font-family: "Roboto", sans-serif;
-        }
-        .bookdiscovercallonline {
-          background: #0e8ae3 !important;
-          color: #fff;
-          font-weight: 500;
-          font-size: 14px !important;
-          border-radius: 30px;
-        }
-        .bookdiscovercall, .buttonbg {
-          background: #033361 !important;
-          border: 1px solid #fff;
-          color: #fff;
-          font-weight: 500;
-          font-size: 14px !important;
-          border-radius: 30px;
-        }
-        .partnerlists {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-        }
-        .partnerlists .partner-item {
-          padding: 20px 30px;
-          width: calc(100% / 6);
-          text-align: center;
-        }
-        .partnerlists .partner-item img {
-          max-width: 100%;
-          width: 100%;
-          height: 100%;
-          margin: 0 auto;
-        }
-        .bg-card.text-card-foreground {
-          padding-top: 0;
-        }
-        .videowrapper {
-          position: absolute;
-          top: 0;
-          height: 100%;
-        }
-
-        .videowrapper video {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      </style>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/style.css">
    </head>
@@ -92,39 +31,82 @@
                </div>
             </div>
          </nav>
-         <section id="hero" data-section="hero" class="relative min-h-screen flex items-center justify-center px-6 py-32">
-          <div class="videowrapper" style="display: block;">
-              <video id="video" loop="loop" autoplay="autoplay" allowsinlinemedia="" playsinline="" muted="" width="100%" height="100%">
-                  <source src="https://probus.io/wp-content/uploads/2025/06/hpvideo3.mp4" type="video/mp4">
-              </video>
-          </div>
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/3 to-emerald-600/3"></div>
-            <div class="relative z-10 max-w-6xl mx-auto text-center transition-all duration-1000 ease-out  translate-y-8">
-               <div class="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-lg mb-12 transition-all duration-700 delay-300  scale-95">
-                  <div class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
-                  <span class="text-slate-700 font-medium">Live from Enlit Asia 2025</span>
+         <section id="hero" data-section="hero" class="relative items-center justify-center">
+            <div class="heroslider">
+               <div class="heroslide min-h-screen relative py-32">
+                  <div class="heroslideinnr">
+                     <div class="videowrapper" style="display: block;">
+                        <video id="video" loop="loop" autoplay="autoplay" allowsinlinemedia="" playsinline="" muted="" width="100%" height="100%">
+                              <source src="https://probus.io/wp-content/uploads/2025/06/hpvideo3.mp4" type="video/mp4">
+                        </video>
+                     </div>
+                     <div class="absolute inset-0 bg-gradient-to-r from-blue-600/3 to-emerald-600/3"></div>
+                     <div class="relative z-10 max-w-6xl mx-auto text-center transition-all duration-1000 ease-out  translate-y-8">
+                        <div class="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-lg mb-12 transition-all duration-700 delay-300  scale-95">
+                           <div class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
+                           <span class="text-slate-700 font-medium">Live from Enlit Asia 2025</span>
+                        </div>
+                        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-12 leading-[1.1] transition-all duration-1000 delay-500  translate-y-12 text-white">The Future of<br/><span class="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">Smart Grid Intelligence</span></h1>
+                        <p class="text-xl md:text-2xl text-slate-600 mb-16 max-w-4xl mx-auto leading-relaxed transition-all duration-1000 delay-700  translate-y-8 text-white">Experience Agentic Smart Grid Management that thinks, learns, and optimizes autonomously.<br/><span class="font-semibold text-slate-800 mt-4 block text-white">September 9–11, 2025 | Bangkok, Thailand</span></p>
+                        <div class="flex justify-center gap-8 mb-16 transition-all duration-1000 delay-900  translate-y-8">
+                           <div class="bg-white/95 daycount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:0ms">
+                              <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
+                              <div class="text-sm text-slate-500 capitalize font-medium">days</div>
+                           </div>
+                           <div class="bg-white/95 hourcount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:100ms">
+                              <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
+                              <div class="text-sm text-slate-500 capitalize font-medium">hours</div>
+                           </div>
+                           <div class="bg-white/95 mincount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:200ms">
+                              <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
+                              <div class="text-sm text-slate-500 capitalize font-medium">minutes</div>
+                           </div>
+                           <div class="bg-white/95 seccount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:300ms">
+                              <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
+                              <div class="text-sm text-slate-500 capitalize font-medium">seconds</div>
+                           </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-6 justify-center transition-all duration-1000 delay-1100  translate-y-8"><button data-slot="button" class="bookdiscovercall inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-10 has-[&gt;svg]:px-4 bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white px-12 py-6 text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 font-semibold hover:scale-105">Book Discovery Call</button><button data-slot="button" class="bookdiscovercallonline inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 has-[&gt;svg]:px-4 border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-12 py-6 text-lg rounded-2xl font-semibold bg-white/80 backdrop-blur-sm hover:scale-105 transition-all duration-300">Download Playbook</button></div>
+                     </div>
+                  </div>
                </div>
-               <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-12 leading-[1.1] transition-all duration-1000 delay-500  translate-y-12 text-white">The Future of<br/><span class="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">Smart Grid Intelligence</span></h1>
-               <p class="text-xl md:text-2xl text-slate-600 mb-16 max-w-4xl mx-auto leading-relaxed transition-all duration-1000 delay-700  translate-y-8 text-white">Experience Agentic Smart Grid Management that thinks, learns, and optimizes autonomously.<br/><span class="font-semibold text-slate-800 mt-4 block text-white">September 9–11, 2025 | Bangkok, Thailand</span></p>
-               <div class="flex justify-center gap-8 mb-16 transition-all duration-1000 delay-900  translate-y-8">
-                  <div class="bg-white/95 daycount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:0ms">
-                     <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
-                     <div class="text-sm text-slate-500 capitalize font-medium">days</div>
-                  </div>
-                  <div class="bg-white/95 hourcount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:100ms">
-                     <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
-                     <div class="text-sm text-slate-500 capitalize font-medium">hours</div>
-                  </div>
-                  <div class="bg-white/95 mincount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:200ms">
-                     <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
-                     <div class="text-sm text-slate-500 capitalize font-medium">minutes</div>
-                  </div>
-                  <div class="bg-white/95 seccount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:300ms">
-                     <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
-                     <div class="text-sm text-slate-500 capitalize font-medium">seconds</div>
+               <div class="heroslide">
+                  <div class="heroslideinnr">
+                     <div class="videowrapper" style="display: block;">
+                        <video id="video" loop="loop" autoplay="autoplay" allowsinlinemedia="" playsinline="" muted="" width="100%" height="100%">
+                              <source src="https://probus.io/wp-content/uploads/2025/06/hpvideo3.mp4" type="video/mp4">
+                        </video>
+                     </div>
+                     <div class="absolute inset-0 bg-gradient-to-r from-blue-600/3 to-emerald-600/3"></div>
+                     <div class="relative z-10 max-w-6xl mx-auto text-center transition-all duration-1000 ease-out  translate-y-8">
+                        <div class="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-lg mb-12 transition-all duration-700 delay-300  scale-95">
+                           <div class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
+                           <span class="text-slate-700 font-medium">Live from Enlit Asia 2025</span>
+                        </div>
+                        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-12 leading-[1.1] transition-all duration-1000 delay-500  translate-y-12 text-white">The Future of<br/><span class="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">Smart Grid Intelligence</span></h1>
+                        <p class="text-xl md:text-2xl text-slate-600 mb-16 max-w-4xl mx-auto leading-relaxed transition-all duration-1000 delay-700  translate-y-8 text-white">Experience Agentic Smart Grid Management that thinks, learns, and optimizes autonomously.<br/><span class="font-semibold text-slate-800 mt-4 block text-white">September 9–11, 2025 | Bangkok, Thailand</span></p>
+                        <div class="flex justify-center gap-8 mb-16 transition-all duration-1000 delay-900  translate-y-8">
+                           <div class="bg-white/95 daycount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:0ms">
+                              <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
+                              <div class="text-sm text-slate-500 capitalize font-medium">days</div>
+                           </div>
+                           <div class="bg-white/95 hourcount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:100ms">
+                              <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
+                              <div class="text-sm text-slate-500 capitalize font-medium">hours</div>
+                           </div>
+                           <div class="bg-white/95 mincount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:200ms">
+                              <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
+                              <div class="text-sm text-slate-500 capitalize font-medium">minutes</div>
+                           </div>
+                           <div class="bg-white/95 seccount backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/30 min-w-[120px] transition-all duration-500 hover:scale-105 hover:shadow-2xl" style="animation-delay:300ms">
+                              <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent mb-2">0</div>
+                              <div class="text-sm text-slate-500 capitalize font-medium">seconds</div>
+                           </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-6 justify-center transition-all duration-1000 delay-1100  translate-y-8"><button data-slot="button" class="bookdiscovercall inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-10 has-[&gt;svg]:px-4 bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white px-12 py-6 text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 font-semibold hover:scale-105">Book Discovery Call</button><button data-slot="button" class="bookdiscovercallonline inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 has-[&gt;svg]:px-4 border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-12 py-6 text-lg rounded-2xl font-semibold bg-white/80 backdrop-blur-sm hover:scale-105 transition-all duration-300">Download Playbook</button></div>
+                     </div>
                   </div>
                </div>
-               <div class="flex flex-col sm:flex-row gap-6 justify-center transition-all duration-1000 delay-1100  translate-y-8"><button data-slot="button" class="bookdiscovercall inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-10 has-[&gt;svg]:px-4 bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white px-12 py-6 text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 font-semibold hover:scale-105">Book Discovery Call</button><button data-slot="button" class="bookdiscovercallonline inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 has-[&gt;svg]:px-4 border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-12 py-6 text-lg rounded-2xl font-semibold bg-white/80 backdrop-blur-sm hover:scale-105 transition-all duration-300">Download Playbook</button></div>
             </div>
          </section>
          <section id="why" data-section="why" class="py-32 px-6 bg-white">
@@ -137,15 +119,15 @@
                   <div data-slot="card" class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm group hover:shadow-2xl transition-all duration-700 border-0 bg-gradient-to-br from-blue-50 to-blue-100 hover:scale-105">
                      <div data-slot="card-content" class="p-10 text-center">
                         <div class="w-24 h-24 mx-auto mb-8 bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500"><span class="text-white font-bold text-3xl">🌍</span></div>
-                        <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Global Reach</h3>
-                        <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-4">50+</div>
-                        <p class="text-slate-600 text-lg leading-relaxed">Countries served with cutting-edge smart grid technology</p>
+                        <h3 class="text-2xl md:text-2xl font-bold text-slate-900 mb-6">Geographic Footprint</h3>
+                        <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-4">15+</div>
+                        <p class="text-slate-600 text-lg leading-relaxed">Cities served with cutting edge smart grid technology</p>
                      </div>
                   </div>
                   <div data-slot="card" class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm group hover:shadow-2xl transition-all duration-700 border-0 bg-gradient-to-br from-emerald-50 to-emerald-100 hover:scale-105">
                      <div data-slot="card-content" class="p-10 text-center">
                         <div class="w-24 h-24 mx-auto mb-8 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500"><span class="text-white font-bold text-3xl">🚀</span></div>
-                        <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Innovation Leader</h3>
+                        <h3 class="text-2xl md:text-2xl font-bold text-slate-900 mb-6">Innovation Leader</h3>
                         <div class="text-4xl md:text-5xl font-bold text-emerald-600 mb-4">AI-First</div>
                         <p class="text-slate-600 text-lg leading-relaxed">Pioneering autonomous grid management with advanced AI</p>
                      </div>
@@ -153,9 +135,9 @@
                   <div data-slot="card" class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm group hover:shadow-2xl transition-all duration-700 border-0 bg-gradient-to-br from-purple-50 to-purple-100 hover:scale-105">
                      <div data-slot="card-content" class="p-10 text-center">
                         <div class="w-24 h-24 mx-auto mb-8 bg-gradient-to-r from-purple-600 to-purple-700 rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500"><span class="text-white font-bold text-3xl">⚡</span></div>
-                        <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Energy IoT Expert</h3>
-                        <div class="text-4xl md:text-5xl font-bold text-purple-600 mb-4">1000+</div>
-                        <p class="text-slate-600 text-lg leading-relaxed">Smart installations optimizing energy infrastructure</p>
+                        <h3 class="text-2xl md:text-2xl font-bold text-slate-900 mb-6">Energy IoT Expert</h3>
+                        <div class="text-4xl md:text-5xl font-bold text-purple-600 mb-4">1 Million +</div>
+                        <p class="text-slate-600 text-lg leading-relaxed">IoT sensor deployments on Probus Sense Platform</p>
                      </div>
                   </div>
                </div>
@@ -190,7 +172,7 @@
                                <div data-slot="card" class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border-0 bg-gradient-to-br from-white to-blue-50 overflow-hidden">
                                   <div data-slot="card-content" class="p-0">
                                      <div class="relative h-96 bg-gradient-to-r from-blue-600 to-emerald-600 overflow-hidden">
-                                        <img src="img/futuristic-smart-grid-control-room-with-ai-display.png" alt="Agentic Smart Grid Management" class="w-full h-full object-cover opacity-90 transition-transform duration-700 hover:scale-105"/>
+                                        <img src="img/smart-grid.jpg" alt="Agentic Smart Grid Management" class="w-full h-full object-cover opacity-90 transition-transform duration-700 hover:scale-105"/>
                                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                                         <div class="absolute inset-0 flex items-end p-12">
                                            <div class="text-white max-w-3xl">
@@ -198,37 +180,37 @@
                                                  <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center"><span class="text-white font-bold text-3xl">🧠</span></div>
                                                  <span class="text-sm font-medium bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">AI-Powered</span>
                                               </div>
-                                              <h3 class="text-4xl md:text-5xl font-bold mb-4">Agentic Smart Grid Management</h3>
+                                              <h3 class="text-4xl md:text-5xl font-bold mb-4">Agentic AI Smart Grid Management</h3>
                                               <p class="text-xl md:text-2xl text-white/90">AI-Powered Grid Intelligence</p>
                                            </div>
                                         </div>
                                      </div>
                                      <div class="p-16">
-                                        <p class="text-xl md:text-2xl text-slate-600 leading-relaxed mb-12">Revolutionary AI-powered grid management that autonomously optimizes energy distribution, predicts failures, and ensures maximum efficiency across your entire network.</p>
+                                        <p class="text-xl md:text-2xl text-slate-600 leading-relaxed mb-12">Revolutionary AI -powered grid management that predict failures, automatically assign tickets to users, and ensure meaningful reasons for failures.</p>
                                         <div class="grid md:grid-cols-2 gap-8 mb-12">
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-600 to-emerald-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Autonomous grid optimization</span>
+                                              <span class="text-slate-700 font-medium text-lg">Predictive Failure Detection</span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-600 to-emerald-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Predictive maintenance alerts</span>
+                                              <span class="text-slate-700 font-medium text-lg">Consumer Indexing</span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-600 to-emerald-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Real-time load balancing</span>
+                                              <span class="text-slate-700 font-medium text-lg">Automated Ticket Assignment.</span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-600 to-emerald-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">AI-driven fault detection</span>
+                                              <span class="text-slate-700 font-medium text-lg">Operational Efficiency & Optimization</span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-600 to-emerald-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Energy demand forecasting</span>
+                                              <span class="text-slate-700 font-medium text-lg">Root Cause Analysis</span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-600 to-emerald-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Renewable integration</span>
+                                              <span class="text-slate-700 font-medium text-lg">Enhanced customer experience</span>
                                            </div>
                                         </div>
                                         <div class="flex flex-col sm:flex-row gap-6"><button data-slot="button" class="bookdiscovercallonline inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-9 has-[&gt;svg]:px-3 bg-gradient-to-r from-blue-600 to-emerald-600 hover:opacity-90 text-white px-12 py-6 text-lg rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">Know More</button><button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 has-[&gt;svg]:px-3 border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-12 py-6 text-lg rounded-2xl font-semibold bg-white/80 backdrop-blur-sm hover:scale-105 transition-all duration-300 bookdiscovercall">Book a Call</button></div>
@@ -242,7 +224,7 @@
                                <div data-slot="card" class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border-0 bg-gradient-to-br from-white to-blue-50 overflow-hidden">
                                   <div data-slot="card-content" class="p-0">
                                      <div class="relative h-96 bg-gradient-to-r from-blue-500 to-blue-600 overflow-hidden">
-                                        <img src="img/smart-electricity-meters-with-digital-displays-and.png" alt="Smart Metering Solutions" class="w-full h-full object-cover opacity-90 transition-transform duration-700 hover:scale-105"/>
+                                        <img src="img/smart-meter-hero.jpg" alt="Smart Metering Solutions" class="w-full h-full object-cover opacity-90 transition-transform duration-700 hover:scale-105"/>
                                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                                         <div class="absolute inset-0 flex items-end p-12">
                                            <div class="text-white max-w-3xl">
@@ -264,7 +246,7 @@
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Advanced data analytics</span>
+                                              <span class="text-slate-700 font-medium text-lg">Integrate Solar meters</span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
@@ -272,15 +254,15 @@
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Tamper detection alerts</span>
+                                              <span class="text-slate-700 font-medium text-lg">Operational Efficiency & Optimization</span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Load profiling capabilities</span>
+                                              <span class="text-slate-700 font-medium text-lg">Dual Communication</span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Demand response integration</span>
+                                              <span class="text-slate-700 font-medium text-lg">Scalable to 5 million+ devices</span>
                                            </div>
                                         </div>
                                         <div class="flex flex-col sm:flex-row gap-6"><button data-slot="button" class="bookdiscovercallonline inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-9 has-[&gt;svg]:px-3 bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-90 text-white px-12 py-6 text-lg rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">Know More</button><button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 has-[&gt;svg]:px-3 border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-12 py-6 text-lg rounded-2xl font-semibold bg-white/80 backdrop-blur-sm hover:scale-105 transition-all duration-300 bookdiscovercall">Book a Call</button></div>
@@ -368,11 +350,11 @@
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Predictive analytics</span>
+                                              <span class="text-slate-700 font-medium text-lg">Distribution Transformer Condition Monitoring</span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-600"></div>
-                                              <span class="text-slate-700 font-medium text-lg">Custom reporting tools</span>
+                                              <span class="text-slate-700 font-medium text-lg">Pin-point outage detection </span>
                                            </div>
                                            <div class="flex items-center gap-4">
                                               <div class="w-4 h-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-600"></div>
@@ -417,13 +399,13 @@
                            <div data-slot="card-content" class="p-16 text-center">
                               <div class="max-w-5xl mx-auto">
                                  <div class="text-8xl text-blue-200 mb-8">&quot;</div>
-                                 <blockquote class="text-2xl md:text-4xl text-slate-700 font-medium leading-relaxed mb-12">Probus transformed our grid efficiency by 40% in just 6 months. Their AI solutions are game-changing.</blockquote>
+                                 <blockquote class="text-2xl md:text-4xl text-slate-700 font-medium leading-relaxed mb-12">Making smart meter data 99.95% available in a complex demographics is beyond imaginable.</blockquote>
                                  <div class="flex items-center justify-center gap-6">
                                     <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-full flex items-center justify-center shadow-lg"><span class="text-white font-bold text-2xl">E</span></div>
                                     <div class="text-left">
-                                       <p class="font-bold text-slate-900 text-xl">Energy Director</p>
-                                       <p class="text-slate-600 text-lg">Southeast Asia Utility</p>
-                                       <p class="text-slate-500">Thailand</p>
+                                       <p class="font-bold text-slate-900 text-xl">General Manager</p>
+                                       <p class="text-slate-600 text-lg">Gujarat - Electricity Utility</p>
+                                       <!-- <p class="text-slate-500">Thailand</p> -->
                                     </div>
                                  </div>
                               </div>
@@ -605,6 +587,15 @@
             arrows: false,
             dots: false
           });
+          
+          $('.heroslider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: false,
+            dots: true
+          });
+          
 
           // Custom dot click
           $('.testdots button').each(function(index){
@@ -691,6 +682,93 @@
 
 
       </script>
-   </body>
+      <style type="text/css">
+        ul.slick-dots {
+            display: none !important;
+        }
+        .discovermodale.active {
+          display: block !important; /* ya block jo tu chahe */
+        }
+        .w-28 {
+          width: calc(var(--spacing)*28)
+        }
+        body {
+           font-family: "Roboto", sans-serif;
+        }
+        .bookdiscovercallonline {
+          background: #0e8ae3 !important;
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px !important;
+          border-radius: 30px;
+        }
+        .bookdiscovercall, .buttonbg {
+          background: #033361 !important;
+          border: 1px solid #fff;
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px !important;
+          border-radius: 30px;
+        }
+        .partnerlists {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .partnerlists .partner-item {
+          padding: 20px 30px;
+          width: calc(100% / 6);
+          text-align: center;
+        }
+        .partnerlists .partner-item img {
+          max-width: 100%;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+        }
+        .bg-card.text-card-foreground {
+          padding-top: 0;
+        }
+        .videowrapper {
+          position: absolute;
+          top: 0;
+          height: 100%;
+        }
+        .heroslideinnr {
+         width: 100%;
+        }
+        .videowrapper video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .heroslider {
+            margin-bottom: 0px !important;
+         }
 
+         .heroslider  ul.slick-dots {
+            bottom: 20px;
+            right: 0;
+            display: block !important;
+         }
+
+         .heroslider ul.slick-dots li button {
+            border-radius: 10px;
+            background: #ffff;
+            width: 15px;height: 15px;
+         }
+
+         .heroslider ul.slick-dots li button:before {
+            display: none;
+         }
+
+         ul.slick-dots {}
+
+         .heroslider ul.slick-dots li.slick-active button {
+            background: #033361;
+         }
+      </style>
+   </body>
 </html>
