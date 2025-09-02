@@ -419,8 +419,9 @@
                                  <div class="flex items-center justify-center gap-6">
                                     <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-full flex items-center justify-center shadow-lg"><span class="text-white font-bold text-2xl">E</span></div>
                                     <div class="text-left">
-                                       <p class="font-bold text-slate-900 text-xl">General Manager   </p>
+                                       <p class="font-bold text-slate-900 text-xl">General Manager</p>
                                        <p class="text-slate-600 text-lg">Delhi Electricity Utility</p>
+                                       <!-- <p class="text-slate-500">Thailand</p> -->
                                     </div>
                                  </div>
                               </div>
@@ -510,34 +511,35 @@
        </div>
     </div>
   </div>
-      <script>
-        // Target date: 9 September 2025 00:00:00
-        const targetDate = new Date("2025-09-09T00:00:00").getTime();
+     <script>
+// Target date: 9 September 2025 00:00:00
+const targetDate = new Date("2025-09-09T00:00:00").getTime();
 
-        const countdown = setInterval(() => {
-          const now = new Date().getTime();
-          const distance = targetDate - now;
+const countdown = setInterval(() => {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
 
-          if (distance <= 0) {
-            clearInterval(countdown);
-            document.querySelector(".daycount .font-bold").textContent = "0";
-            document.querySelector(".hourcount .font-bold").textContent = "0";
-            document.querySelector(".mincount .font-bold").textContent = "0";
-            document.querySelector(".seccount .font-bold").textContent = "0";
-            return;
-          }
+  let days, hours, minutes, seconds;
 
-          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  if (distance <= 0) {
+    clearInterval(countdown);
+    days = hours = minutes = seconds = 0;
+  } else {
+    days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  }
 
-          document.querySelector(".daycount .font-bold").textContent = days;
-          document.querySelector(".hourcount .font-bold").textContent = hours;
-          document.querySelector(".mincount .font-bold").textContent = minutes;
-          document.querySelector(".seccount .font-bold").textContent = seconds;
-        }, 1000);
-      </script>
+  // Multiple elements ke liye loop
+  document.querySelectorAll(".daycount .font-bold").forEach(el => el.textContent = days);
+  document.querySelectorAll(".hourcount .font-bold").forEach(el => el.textContent = hours);
+  document.querySelectorAll(".mincount .font-bold").forEach(el => el.textContent = minutes);
+  document.querySelectorAll(".seccount .font-bold").forEach(el => el.textContent = seconds);
+
+}, 1000);
+</script>
+
       <!-- head me -->
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -770,6 +772,4 @@
          }
       </style>
    </body>
-
 </html>
-
